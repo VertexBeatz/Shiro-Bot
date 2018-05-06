@@ -1,0 +1,29 @@
+{
+    "Servers" : {
+        "396005343156633611" : {
+            "Config" : {
+                "Inventory Output Method" : "Chat",
+                "Member Discount" : null,
+                "Pending Type" : "Manual",
+                "Shop Name" : "Jumpman's",
+                "Shop Notify" : false,
+                "Shop Open" : true,
+                "Shop Role" : null,
+                "Sort Method" : "Alphabet",
+                "Store Output Method" : "Chat",
+                "Trade Cooldown" : 30
+            },
+            "Pending" : {},
+            "Shop List" : {},
+            "Users" : {
+                "286663845710266369" : {
+                    "Block Trades" : false,
+                    "Inventory" : {},
+                    "Member" : false,
+                    "Trade Cooldown" : 0
+                }
+            }
+        }
+    },
+    "Version" : "2.2.10"
+}

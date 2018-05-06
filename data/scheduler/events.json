@@ -1,0 +1,41 @@
+{
+    "193786663791624192" : {
+        "bump1" : {
+            "author" : "189213698928148481",
+            "channel" : "428177695533170690",
+            "command" : "bump1",
+            "name" : "bump1",
+            "repeat" : true,
+            "starttime" : 1523443059,
+            "timedelta" : 3600
+        },
+        "bump2" : {
+            "author" : "189213698928148481",
+            "channel" : "428177695533170690",
+            "command" : "bump2",
+            "name" : "bump2",
+            "repeat" : true,
+            "starttime" : 1523443069,
+            "timedelta" : 14400
+        },
+        "bump3" : {
+            "author" : "189213698928148481",
+            "channel" : "428177695533170690",
+            "command" : "bump3",
+            "name" : "bump3",
+            "repeat" : true,
+            "starttime" : 1523443079,
+            "timedelta" : 21600
+        },
+        "bump4" : {
+            "author" : "189213698928148481",
+            "channel" : "428177695533170690",
+            "command" : "bump4",
+            "name" : "bump4",
+            "repeat" : true,
+            "starttime" : 1523443087,
+            "timedelta" : 21600
+        }
+    },
+    "332256442394345473" : {}
+}

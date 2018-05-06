@@ -1,0 +1,92 @@
+{
+    "193786663791624192" : {
+        "BOTS_MSG" : null,
+        "BOTS_ROLE" : null,
+        "CHANNEL" : null,
+        "GREETING" : [
+            "Welcome {0.name} to {1.name}!"
+        ],
+        "ON" : false,
+        "WHISPER" : false
+    },
+    "203998882231877641" : {
+        "BOTS_MSG" : "eww",
+        "BOTS_ROLE" : "Bots",
+        "CHANNEL" : "203998882231877641",
+        "GREETING" : [
+            "Welcome {0.name} to {1.name} Don't Forget there is more then just Hentai"
+        ],
+        "ON" : true,
+        "WHISPER" : false
+    },
+    "283534045655334912" : {
+        "BOTS_MSG" : null,
+        "BOTS_ROLE" : null,
+        "CHANNEL" : "283534045655334912",
+        "GREETING" : [
+            "Welcome {0.name} to {1.name}!"
+        ],
+        "ON" : false,
+        "WHISPER" : false
+    },
+    "323858384120184835" : {
+        "BOTS_MSG" : null,
+        "BOTS_ROLE" : null,
+        "CHANNEL" : "323858384120184835",
+        "GREETING" : [
+            "Welcome {0.name} to {1.name}!"
+        ],
+        "ON" : false,
+        "WHISPER" : false
+    },
+    "331070932984659983" : {
+        "BOTS_MSG" : null,
+        "BOTS_ROLE" : null,
+        "CHANNEL" : "331070932984659983",
+        "GREETING" : [
+            "Welcome {0.name} to {1.name}!"
+        ],
+        "ON" : false,
+        "WHISPER" : false
+    },
+    "396005343156633611" : {
+        "BOTS_MSG" : null,
+        "BOTS_ROLE" : null,
+        "CHANNEL" : null,
+        "GREETING" : [
+            "Welcome {0.name} to {1.name}!"
+        ],
+        "ON" : false,
+        "WHISPER" : false
+    },
+    "410390675788529664" : {
+        "BOTS_MSG" : null,
+        "BOTS_ROLE" : null,
+        "CHANNEL" : null,
+        "GREETING" : [
+            "Welcome {0.name} to {1.name}!"
+        ],
+        "ON" : false,
+        "WHISPER" : false
+    },
+    "418062159009021952" : {
+        "BOTS_MSG" : null,
+        "BOTS_ROLE" : null,
+        "CHANNEL" : null,
+        "GREETING" : [
+            "Welcome {0.name} to {1.name}!"
+        ],
+        "ON" : false,
+        "WHISPER" : false
+    },
+    "436688948019068939" : {
+        "BOTS_MSG" : null,
+        "BOTS_ROLE" : null,
+        "CHANNEL" : null,
+        "GREETING" : [
+            "Welcome {0.name} to {1.name}!"
+        ],
+        "ON" : false,
+        "WHISPER" : false
+    }
+}

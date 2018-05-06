@@ -1,0 +1,138 @@
+{
+    "193786663791624192" : {
+        "channels" : {
+            "member_event_channel" : "428189596711649295",
+            "message_event_channel" : "428189596711649295",
+            "mod_event_channel" : "428189596711649295",
+            "server_event_channel" : "428189596711649295"
+        },
+        "events" : {
+            "on_ban" : true,
+            "on_channel_create" : true,
+            "on_channel_delete" : true,
+            "on_channel_update" : true,
+            "on_kick" : true,
+            "on_member_ban" : true,
+            "on_member_join" : true,
+            "on_member_remove" : true,
+            "on_member_unban" : true,
+            "on_member_update" : true,
+            "on_message_delete" : true,
+            "on_message_edit" : true,
+            "on_server_role_create" : true,
+            "on_server_role_delete" : true,
+            "on_server_role_update" : true,
+            "on_voice_state_update" : true,
+            "on_warning" : true
+        }
+    },
+    "203998882231877641" : {
+        "channels" : {
+            "member_event_channel" : "439360813443186699",
+            "message_event_channel" : "439360870896762880",
+            "mod_event_channel" : "439360954141114397",
+            "server_event_channel" : "439360910700838942"
+        },
+        "events" : {
+            "on_ban" : true,
+            "on_channel_create" : true,
+            "on_channel_delete" : true,
+            "on_channel_update" : true,
+            "on_kick" : true,
+            "on_member_ban" : true,
+            "on_member_join" : true,
+            "on_member_remove" : true,
+            "on_member_unban" : true,
+            "on_member_update" : true,
+            "on_message_delete" : true,
+            "on_message_edit" : true,
+            "on_server_role_create" : true,
+            "on_server_role_delete" : true,
+            "on_server_role_update" : true,
+            "on_voice_state_update" : true,
+            "on_warning" : true
+        }
+    },
+    "323858384120184835" : {
+        "channels" : {
+            "member_event_channel" : "435746096170401792",
+            "message_event_channel" : "435746096170401792",
+            "mod_event_channel" : "435746096170401792",
+            "server_event_channel" : "435746096170401792"
+        },
+        "events" : {
+            "on_ban" : true,
+            "on_channel_create" : true,
+            "on_channel_delete" : true,
+            "on_channel_update" : true,
+            "on_kick" : true,
+            "on_member_ban" : false,
+            "on_member_join" : true,
+            "on_member_remove" : true,
+            "on_member_unban" : true,
+            "on_member_update" : true,
+            "on_message_delete" : true,
+            "on_message_edit" : true,
+            "on_server_role_create" : true,
+            "on_server_role_delete" : true,
+            "on_server_role_update" : true,
+            "on_voice_state_update" : true,
+            "on_warning" : true
+        }
+    },
+    "331070932984659983" : {
+        "channels" : {
+            "member_event_channel" : "435746416024092672",
+            "message_event_channel" : "435746416024092672",
+            "mod_event_channel" : "435746416024092672",
+            "server_event_channel" : "435746416024092672"
+        },
+        "events" : {
+            "on_ban" : true,
+            "on_channel_create" : false,
+            "on_channel_delete" : false,
+            "on_channel_update" : false,
+            "on_kick" : true,
+            "on_member_ban" : true,
+            "on_member_join" : true,
+            "on_member_remove" : true,
+            "on_member_unban" : true,
+            "on_member_update" : true,
+            "on_message_delete" : true,
+            "on_message_edit" : true,
+            "on_server_role_create" : true,
+            "on_server_role_delete" : true,
+            "on_server_role_update" : true,
+            "on_voice_state_update" : true,
+            "on_warning" : true
+        }
+    },
+    "396005343156633611" : {
+        "channels" : {
+            "member_event_channel" : "433673083677573120",
+            "message_event_channel" : "433673083677573120",
+            "mod_event_channel" : "433673083677573120",
+            "server_event_channel" : "433673083677573120"
+        },
+        "events" : {
+            "on_ban" : true,
+            "on_channel_create" : true,
+            "on_channel_delete" : true,
+            "on_channel_update" : true,
+            "on_kick" : true,
+            "on_member_ban" : true,
+            "on_member_join" : true,
+            "on_member_remove" : true,
+            "on_member_unban" : true,
+            "on_member_update" : true,
+            "on_message_delete" : true,
+            "on_message_edit" : true,
+            "on_server_role_create" : true,
+            "on_server_role_delete" : true,
+            "on_server_role_update" : true,
+            "on_voice_state_update" : true,
+            "on_warning" : true
+        }
+    },
+    "db_version" : 2
+}

@@ -1,0 +1,221 @@
+{
+    "BOARDHEIGHT" : [
+        6,
+        7,
+        9
+    ],
+    "BOARDWIDTH" : [
+        7,
+        8,
+        10
+    ],
+    "BOARD_HEADER" : [
+        ":one:",
+        ":two:",
+        ":three:",
+        ":four:",
+        ":five:",
+        ":six:",
+        ":seven:",
+        ":eight:",
+        ":nine:",
+        ":keycap_ten:",
+        ":a:",
+        ":b:",
+        ":c:"
+    ],
+    "BOT_SETTINGS" : {
+        "DEFAULT_DIFFICULTY" : 1,
+        "DIFFICULTY" : {
+            "EASY" : 1,
+            "HARD" : 4,
+            "NOVICE" : 2
+        },
+        "ENABLED" : false,
+        "TOKEN" : 3
+    },
+    "ENA_QUEUE_MSG" : false,
+    "EXPIRE_TIME" : 900,
+    "ICONS" : [
+        [
+            "black",
+            ":black_circle:"
+        ],
+        [
+            "arrow",
+            "\u2192"
+        ],
+        [
+            "recycle",
+            ":recycle:"
+        ],
+        [
+            "cross",
+            ":x:"
+        ]
+    ],
+    "MAX_LEN_USER_MSG" : 30,
+    "MAX_PLAYERS" : 2,
+    "MIN_PLAYERS" : 2,
+    "MIN_VOTES_TO_UNLOCK" : 2,
+    "REWARDS" : {
+        "DRAW" : 50,
+        "LOSING" : 20,
+        "RUIENING" : -15,
+        "WINNING" : 40
+    },
+    "TIME_PENALTY" : {
+        "POINTS" : [
+            -3,
+            -2,
+            -1
+        ],
+        "SLOW_MOVES_TIME" : [
+            60,
+            80,
+            120
+        ]
+    },
+    "TOKENS" : [
+        [
+            "none",
+            ":x:"
+        ],
+        [
+            "red circle",
+            ":red_circle:"
+        ],
+        [
+            "blue circle",
+            ":large_blue_circle:"
+        ],
+        [
+            "baseball",
+            ":baseball:"
+        ],
+        [
+            "tennisball",
+            ":tennis:"
+        ],
+        [
+            "8ball",
+            ":8ball:"
+        ],
+        [
+            "basketball",
+            ":basketball:"
+        ],
+        [
+            "cd",
+            ":cd:"
+        ],
+        [
+            "dvd",
+            ":dvd:"
+        ],
+        [
+            "full moon",
+            ":full_moon:"
+        ],
+        [
+            "new moon",
+            ":new_moon:"
+        ],
+        [
+            "rice cracker",
+            ":rice_cracker:"
+        ],
+        [
+            "no entry",
+            ":no_entry:"
+        ],
+        [
+            "cherries",
+            ":cherries:"
+        ],
+        [
+            "cookie",
+            ":cookie:"
+        ],
+        [
+            "clover",
+            ":four_leaf_clover:"
+        ],
+        [
+            "cyclone",
+            ":cyclone:"
+        ],
+        [
+            "sunflower",
+            ":sunflower:"
+        ],
+        [
+            "mushroom",
+            ":mushroom:"
+        ],
+        [
+            "heart",
+            ":heart:"
+        ],
+        [
+            "snowflake",
+            ":snowflake:"
+        ],
+        [
+            "Africa globe",
+            ":earth_africa:"
+        ],
+        [
+            "Murica globe",
+            ":earth_americas:"
+        ],
+        [
+            "asia globe",
+            ":earth_asia:"
+        ]
+    ],
+    "TRIG_QUEUE_MSG" : [
+        [
+            "",
+            0,
+            0.0,
+            "x"
+        ],
+        [
+            "a Newbie",
+            3,
+            0.0,
+            "Newbie"
+        ],
+        [
+            "a N00b",
+            5,
+            0.2,
+            "*"
+        ],
+        [
+            "An average player",
+            5,
+            0.4,
+            "**"
+        ],
+        [
+            "The Pro.",
+            10,
+            0.6,
+            "****"
+        ],
+        [
+            "The Unbeatable",
+            10,
+            1.0,
+            "*****"
+        ],
+        [
+            "",
+            9223372036854775807,
+            2.0
+        ]
+    ],
+    "VOTE_UNLOCK_TIME" : 120
+}
