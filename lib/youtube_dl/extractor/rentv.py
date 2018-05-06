@@ -3,10 +3,6 @@ from __future__ import unicode_literals
 
 from .common import InfoExtractor
 from ..compat import compat_str
-from ..utils import (
-    determine_ext,
-    int_or_none,
-)
 
 
 class RENTVIE(InfoExtractor):
@@ -17,9 +13,7 @@ class RENTVIE(InfoExtractor):
         'info_dict': {
             'id': '118577',
             'ext': 'mp4',
-            'title': 'Документальный спецпроект: "Промывка мозгов. Технологии XXI века"',
-            'timestamp': 1472230800,
-            'upload_date': '20160826',
+            'title': 'Документальный спецпроект: "Промывка мозгов. Технологии XXI века"'
         }
     }, {
         'url': 'http://ren.tv/player/118577',
@@ -32,33 +26,9 @@ class RENTVIE(InfoExtractor):
     def _real_extract(self, url):
         video_id = self._match_id(url)
         webpage = self._download_webpage('http://ren.tv/player/' + video_id, video_id)
-        config = self._parse_json(self._search_regex(
-            r'config\s*=\s*({.+})\s*;', webpage, 'config'), video_id)
-        title = config['title']
-        formats = []
-        for video in config['src']:
-            src = video.get('src')
-            if not src or not isinstance(src, compat_str):
-                continue
-            ext = determine_ext(src)
-            if ext == 'm3u8':
-                formats.extend(self._extract_m3u8_formats(
-                    src, video_id, 'mp4', entry_protocol='m3u8_native',
-                    m3u8_id='hls', fatal=False))
-            else:
-                formats.append({
-                    'url': src,
-                })
-        self._sort_formats(formats)
-        return {
-            'id': video_id,
-            'title': title,
-            'description': config.get('description'),
-            'thumbnail': config.get('image'),
-            'duration': int_or_none(config.get('duration')),
-            'timestamp': int_or_none(config.get('date')),
-            'formats': formats,
-        }
+        jw_config = self._parse_json(self._search_regex(
+            r'config\s*=\s*({.+});', webpage, 'jw config'), video_id)
+        return self._parse_jwplayer_data(jw_config, video_id, m3u8_id='hls')
 
 
 class RENTVArticleIE(InfoExtractor):

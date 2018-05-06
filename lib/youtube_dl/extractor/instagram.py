@@ -1,21 +1,15 @@
 from __future__ import unicode_literals
 
 import itertools
-import hashlib
 import json
 import re
 
 from .common import InfoExtractor
-from ..compat import (
-    compat_str,
-    compat_HTTPError,
-)
+from ..compat import compat_str
 from ..utils import (
-    ExtractorError,
     get_element_by_attribute,
     int_or_none,
     lowercase_escape,
-    std_headers,
     try_get,
 )
 
@@ -244,56 +238,25 @@ class InstagramUserIE(InfoExtractor):
         }
     }
 
-    _gis_tmpl = None
-
-    def _entries(self, data):
+    def _entries(self, uploader_id):
         def get_count(suffix):
             return int_or_none(try_get(
                 node, lambda x: x['edge_media_' + suffix]['count']))
-
-        uploader_id = data['entry_data']['ProfilePage'][0]['graphql']['user']['id']
-        csrf_token = data['config']['csrf_token']
-        rhx_gis = data.get('rhx_gis') or '3c7ca9dcefcf966d11dacf1f151335e8'
 
         self._set_cookie('instagram.com', 'ig_pr', '1')
 
         cursor = ''
         for page_num in itertools.count(1):
-            variables = json.dumps({
-                'id': uploader_id,
-                'first': 12,
-                'after': cursor,
-            })
-
-            if self._gis_tmpl:
-                gis_tmpls = [self._gis_tmpl]
-            else:
-                gis_tmpls = [
-                    '%s' % rhx_gis,
-                    '',
-                    '%s:%s' % (rhx_gis, csrf_token),
-                    '%s:%s:%s' % (rhx_gis, csrf_token, std_headers['User-Agent']),
-                ]
-
-            for gis_tmpl in gis_tmpls:
-                try:
-                    media = self._download_json(
-                        'https://www.instagram.com/graphql/query/', uploader_id,
-                        'Downloading JSON page %d' % page_num, headers={
-                            'X-Requested-With': 'XMLHttpRequest',
-                            'X-Instagram-GIS': hashlib.md5(
-                                ('%s:%s' % (gis_tmpl, variables)).encode('utf-8')).hexdigest(),
-                        }, query={
-                            'query_hash': '42323d64886122307be10013ad2dcc44',
-                            'variables': variables,
-                        })['data']['user']['edge_owner_to_timeline_media']
-                    self._gis_tmpl = gis_tmpl
-                    break
-                except ExtractorError as e:
-                    if isinstance(e.cause, compat_HTTPError) and e.cause.code == 403:
-                        if gis_tmpl != gis_tmpls[-1]:
-                            continue
-                    raise
+            media = self._download_json(
+                'https://www.instagram.com/graphql/query/', uploader_id,
+                'Downloading JSON page %d' % page_num, query={
+                    'query_hash': '472f257a40c653c64c666ce877d59d2b',
+                    'variables': json.dumps({
+                        'id': uploader_id,
+                        'first': 100,
+                        'after': cursor,
+                    })
+                })['data']['user']['edge_owner_to_timeline_media']
 
             edges = media.get('edges')
             if not edges or not isinstance(edges, list):
@@ -348,13 +311,9 @@ class InstagramUserIE(InfoExtractor):
 
     def _real_extract(self, url):
         username = self._match_id(url)
-
-        webpage = self._download_webpage(url, username)
-
-        data = self._parse_json(
-            self._search_regex(
-                r'sharedData\s*=\s*({.+?})\s*;\s*[<\n]', webpage, 'data'),
-            username)
-
+        uploader_id = self._download_json(
+            'https://instagram.com/%s/' % username, username, query={
+                '__a': 1,
+            })['graphql']['user']['id']
         return self.playlist_result(
-            self._entries(data), username, username)
+            self._entries(uploader_id), username, username)

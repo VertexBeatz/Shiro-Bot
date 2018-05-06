@@ -5,10 +5,7 @@ import re
 
 from .common import InfoExtractor
 from .nexx import NexxIE
-from ..utils import (
-    int_or_none,
-    try_get,
-)
+from ..utils import int_or_none
 
 
 class FunkBaseIE(InfoExtractor):
@@ -81,20 +78,6 @@ class FunkChannelIE(FunkBaseIE):
             'skip_download': True,
         },
     }, {
-        # only available via byIdList API
-        'url': 'https://www.funk.net/channel/informr/martin-sonneborn-erklaert-die-eu',
-        'info_dict': {
-            'id': '205067',
-            'ext': 'mp4',
-            'title': 'Martin Sonneborn erklärt die EU',
-            'description': 'md5:050f74626e4ed87edf4626d2024210c0',
-            'timestamp': 1494424042,
-            'upload_date': '20170510',
-        },
-        'params': {
-            'skip_download': True,
-        },
-    }, {
         'url': 'https://www.funk.net/channel/59d5149841dca100012511e3/mein-erster-job-lovemilla-folge-1/lovemilla/',
         'only_matching': True,
     }]
@@ -104,28 +87,16 @@ class FunkChannelIE(FunkBaseIE):
         channel_id = mobj.group('id')
         alias = mobj.group('alias')
 
-        headers = {
-            'authorization': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnROYW1lIjoiY3VyYXRpb24tdG9vbCIsInNjb3BlIjoic3RhdGljLWNvbnRlbnQtYXBpLGN1cmF0aW9uLWFwaSxzZWFyY2gtYXBpIn0.q4Y2xZG8PFHai24-4Pjx2gym9RmJejtmK6lMXP5wAgc',
-            'Referer': url,
-        }
+        results = self._download_json(
+            'https://www.funk.net/api/v3.0/content/videos/filter', channel_id,
+            headers={
+                'authorization': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnROYW1lIjoiY3VyYXRpb24tdG9vbCIsInNjb3BlIjoic3RhdGljLWNvbnRlbnQtYXBpLGN1cmF0aW9uLWFwaSxzZWFyY2gtYXBpIn0.q4Y2xZG8PFHai24-4Pjx2gym9RmJejtmK6lMXP5wAgc',
+                'Referer': url,
+            }, query={
+                'channelId': channel_id,
+                'size': 100,
+            })['result']
 
-        video = None
-
-        by_id_list = self._download_json(
-            'https://www.funk.net/api/v3.0/content/videos/byIdList', channel_id,
-            headers=headers, query={
-                'ids': alias,
-            }, fatal=False)
-        if by_id_list:
-            video = try_get(by_id_list, lambda x: x['result'][0], dict)
-
-        if not video:
-            results = self._download_json(
-                'https://www.funk.net/api/v3.0/content/videos/filter', channel_id,
-                headers=headers, query={
-                    'channelId': channel_id,
-                    'size': 100,
-                })['result']
-            video = next(r for r in results if r.get('alias') == alias)
+        video = next(r for r in results if r.get('alias') == alias)
 
         return self._make_url_result(video)

@@ -6,6 +6,7 @@ Home-page: https://github.com/pyca/pynacl/
 Author: The PyNaCl developers
 Author-email: cryptography-dev@python.org
 License: Apache License 2.0
+Description-Content-Type: UNKNOWN
 Platform: UNKNOWN
 Classifier: Programming Language :: Python :: Implementation :: CPython
 Classifier: Programming Language :: Python :: Implementation :: PyPy
@@ -16,8 +17,8 @@ Classifier: Programming Language :: Python :: 3
 Classifier: Programming Language :: Python :: 3.3
 Classifier: Programming Language :: Python :: 3.4
 Classifier: Programming Language :: Python :: 3.5
-Requires-Dist: cffi (>=1.1.0)
 Requires-Dist: six
+Requires-Dist: cffi (>=1.1.0)
 Provides-Extra: tests
 Requires-Dist: pytest; extra == 'tests'
 

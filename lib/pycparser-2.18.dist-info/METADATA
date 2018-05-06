@@ -6,6 +6,7 @@ Home-page: https://github.com/eliben/pycparser
 Author: Eli Bendersky
 Author-email: eliben@gmail.com
 License: BSD
+Description-Content-Type: UNKNOWN
 Platform: Cross Platform
 Classifier: Programming Language :: Python :: 2
 Classifier: Programming Language :: Python :: 3

@@ -4,13 +4,11 @@ from __future__ import unicode_literals
 import re
 
 from .common import InfoExtractor
-from ..compat import compat_str
 from ..utils import (
-    clean_html,
     int_or_none,
     parse_duration,
     parse_iso8601,
-    parse_resolution,
+    clean_html,
 )
 
 
@@ -42,42 +40,34 @@ class CCMAIE(InfoExtractor):
 
     def _real_extract(self, url):
         media_type, media_id = re.match(self._VALID_URL, url).groups()
-
-        media = self._download_json(
-            'http://dinamics.ccma.cat/pvideo/media.jsp', media_id, query={
+        media_data = {}
+        formats = []
+        profiles = ['pc'] if media_type == 'audio' else ['mobil', 'pc']
+        for i, profile in enumerate(profiles):
+            md = self._download_json('http://dinamics.ccma.cat/pvideo/media.jsp', media_id, query={
                 'media': media_type,
                 'idint': media_id,
-            })
-
-        formats = []
-        media_url = media['media']['url']
-        if isinstance(media_url, list):
-            for format_ in media_url:
-                format_url = format_.get('file')
-                if not format_url or not isinstance(format_url, compat_str):
-                    continue
-                label = format_.get('label')
-                f = parse_resolution(label)
-                f.update({
-                    'url': format_url,
-                    'format_id': label,
-                })
-                formats.append(f)
-        else:
-            formats.append({
-                'url': media_url,
-                'vcodec': 'none' if media_type == 'audio' else None,
-            })
+                'profile': profile,
+            }, fatal=False)
+            if md:
+                media_data = md
+                media_url = media_data.get('media', {}).get('url')
+                if media_url:
+                    formats.append({
+                        'format_id': profile,
+                        'url': media_url,
+                        'quality': i,
+                    })
         self._sort_formats(formats)
 
-        informacio = media['informacio']
+        informacio = media_data['informacio']
         title = informacio['titol']
         durada = informacio.get('durada', {})
         duration = int_or_none(durada.get('milisegons'), 1000) or parse_duration(durada.get('text'))
         timestamp = parse_iso8601(informacio.get('data_emissio', {}).get('utc'))
 
         subtitles = {}
-        subtitols = media.get('subtitols', {})
+        subtitols = media_data.get('subtitols', {})
         if subtitols:
             sub_url = subtitols.get('url')
             if sub_url:
@@ -87,7 +77,7 @@ class CCMAIE(InfoExtractor):
                     })
 
         thumbnails = []
-        imatges = media.get('imatges', {})
+        imatges = media_data.get('imatges', {})
         if imatges:
             thumbnail_url = imatges.get('url')
             if thumbnail_url:

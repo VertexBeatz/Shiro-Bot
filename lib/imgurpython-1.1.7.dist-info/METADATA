@@ -6,6 +6,7 @@ Home-page: https://github.com/Imgur/imgurpython
 Author: Imgur Inc.
 Author-email: api@imgur.com
 License: MIT
+Description-Content-Type: UNKNOWN
 Keywords: api,imgur,client
 Platform: UNKNOWN
 Classifier: Development Status :: 4 - Beta

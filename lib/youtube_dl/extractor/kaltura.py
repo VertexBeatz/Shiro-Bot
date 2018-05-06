@@ -135,11 +135,10 @@ class KalturaIE(InfoExtractor):
                 ''', webpage) or
             re.search(
                 r'''(?xs)
-                    <(?:iframe[^>]+src|meta[^>]+\bcontent)=(?P<q1>["'])
-                      (?:https?:)?//(?:(?:www|cdnapi(?:sec)?)\.)?kaltura\.com/(?:(?!(?P=q1)).)*\b(?:p|partner_id)/(?P<partner_id>\d+)
+                    <iframe[^>]+src=(?P<q1>["'])
+                      (?:https?:)?//(?:www\.)?kaltura\.com/(?:(?!(?P=q1)).)*\b(?:p|partner_id)/(?P<partner_id>\d+)
                       (?:(?!(?P=q1)).)*
-                      [?&;]entry_id=(?P<id>(?:(?!(?P=q1))[^&])+)
-                      (?:(?!(?P=q1)).)*
+                      [?&]entry_id=(?P<id>(?:(?!(?P=q1))[^&])+)
                     (?P=q1)
                 ''', webpage)
         )

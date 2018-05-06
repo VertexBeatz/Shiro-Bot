@@ -6,6 +6,7 @@ Home-page: https://github.com/KeepSafe/aiohttp/
 Author: Andrew Svetlov
 Author-email: andrew.svetlov@gmail.com
 License: Apache 2
+Description-Content-Type: UNKNOWN
 Platform: UNKNOWN
 Classifier: License :: OSI Approved :: Apache Software License
 Classifier: Intended Audience :: Developers
@@ -14,9 +15,9 @@ Classifier: Programming Language :: Python :: 3
 Classifier: Programming Language :: Python :: 3.4
 Classifier: Programming Language :: Python :: 3.5
 Classifier: Topic :: Internet :: WWW/HTTP
-Requires-Dist: async-timeout
 Requires-Dist: chardet
 Requires-Dist: multidict (>=2.0)
+Requires-Dist: async-timeout
 
 http client/server for asyncio
 ==============================
