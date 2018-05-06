@@ -1,1 +1,107 @@
-{}
+{
+    "193786663791624192" : {
+        "ban_cases" : true,
+        "ban_mention_spam" : false,
+        "cmute_cases" : false,
+        "delete_repeats" : false,
+        "hackban_cases" : true,
+        "kick_cases" : true,
+        "mod-log" : null,
+        "respect_hierarchy" : false,
+        "smute_cases" : true,
+        "softban_cases" : true,
+        "unban_cases" : true
+    },
+    "203998882231877641" : {
+        "ban_cases" : true,
+        "ban_mention_spam" : false,
+        "cmute_cases" : false,
+        "delete_delay" : 1,
+        "delete_repeats" : true,
+        "hackban_cases" : true,
+        "kick_cases" : true,
+        "mod-log" : "439913520704913409",
+        "respect_hierarchy" : false,
+        "smute_cases" : true,
+        "softban_cases" : true,
+        "unban_cases" : true
+    },
+    "283534045655334912" : {
+        "ban_cases" : true,
+        "ban_mention_spam" : false,
+        "cmute_cases" : false,
+        "delete_repeats" : false,
+        "hackban_cases" : true,
+        "kick_cases" : true,
+        "mod-log" : null,
+        "respect_hierarchy" : false,
+        "smute_cases" : true,
+        "softban_cases" : true,
+        "unban_cases" : true
+    },
+    "323858384120184835" : {
+        "ban_cases" : true,
+        "ban_mention_spam" : false,
+        "cmute_cases" : false,
+        "delete_repeats" : false,
+        "hackban_cases" : true,
+        "kick_cases" : true,
+        "mod-log" : null,
+        "respect_hierarchy" : false,
+        "smute_cases" : true,
+        "softban_cases" : true,
+        "unban_cases" : true
+    },
+    "332256442394345473" : {
+        "ban_cases" : true,
+        "ban_mention_spam" : false,
+        "cmute_cases" : false,
+        "delete_repeats" : false,
+        "hackban_cases" : true,
+        "kick_cases" : true,
+        "mod-log" : null,
+        "respect_hierarchy" : false,
+        "smute_cases" : true,
+        "softban_cases" : true,
+        "unban_cases" : true
+    },
+    "396005343156633611" : {
+        "ban_cases" : true,
+        "ban_mention_spam" : false,
+        "cmute_cases" : false,
+        "delete_repeats" : false,
+        "hackban_cases" : true,
+        "kick_cases" : true,
+        "mod-log" : null,
+        "respect_hierarchy" : false,
+        "smute_cases" : true,
+        "softban_cases" : true,
+        "unban_cases" : true
+    },
+    "418062159009021952" : {
+        "ban_cases" : true,
+        "ban_mention_spam" : false,
+        "cmute_cases" : false,
+        "delete_repeats" : false,
+        "hackban_cases" : true,
+        "kick_cases" : true,
+        "mod-log" : null,
+        "respect_hierarchy" : false,
+        "smute_cases" : true,
+        "softban_cases" : true,
+        "unban_cases" : true
+    },
+    "436688948019068939" : {
+        "ban_cases" : true,
+        "ban_mention_spam" : false,
+        "cmute_cases" : false,
+        "delete_repeats" : false,
+        "hackban_cases" : true,
+        "kick_cases" : true,
+        "mod-log" : null,
+        "respect_hierarchy" : false,
+        "smute_cases" : true,
+        "softban_cases" : true,
+        "unban_cases" : true
+    }
+}

@@ -1,1 +1,34 @@
-{}
+{
+    "193786663791624192" : {
+        "PAYDAY_CREDITS" : 120,
+        "PAYDAY_TIME" : 86400,
+        "REGISTER_CREDITS" : 0,
+        "SLOT_MAX" : 100,
+        "SLOT_MIN" : 5,
+        "SLOT_TIME" : 0
+    },
+    "203998882231877641" : {
+        "PAYDAY_CREDITS" : 120,
+        "PAYDAY_TIME" : 72000,
+        "REGISTER_CREDITS" : 0,
+        "SLOT_MAX" : 100,
+        "SLOT_MIN" : 5,
+        "SLOT_TIME" : 0
+    },
+    "396005343156633611" : {
+        "PAYDAY_CREDITS" : 120,
+        "PAYDAY_TIME" : 300,
+        "REGISTER_CREDITS" : 0,
+        "SLOT_MAX" : 100,
+        "SLOT_MIN" : 5,
+        "SLOT_TIME" : 0
+    },
+    "418062159009021952" : {
+        "PAYDAY_CREDITS" : 120,
+        "PAYDAY_TIME" : 300,
+        "REGISTER_CREDITS" : 0,
+        "SLOT_MAX" : 100,
+        "SLOT_MIN" : 5,
+        "SLOT_TIME" : 0
+    }
+}

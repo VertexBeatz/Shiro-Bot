@@ -1,1 +1,36 @@
-{}
+{
+    "203998882231877641" : {
+        "1" : {
+            "action" : "KICK",
+            "amended_by" : null,
+            "amended_id" : null,
+            "case" : 1,
+            "channel" : null,
+            "created" : 1524968602.522236,
+            "message" : "439914552885379072",
+            "moderator" : "\u2112ife is \u2112ife#1726",
+            "moderator_id" : "189213698928148481",
+            "modified" : null,
+            "reason" : null,
+            "until" : null,
+            "user" : "\u2112ife is \u2112ife#6886",
+            "user_id" : "300696400021159956"
+        },
+        "2" : {
+            "action" : "KICK",
+            "amended_by" : null,
+            "amended_id" : null,
+            "case" : 2,
+            "channel" : null,
+            "created" : 1524968912.7816,
+            "message" : "439915853941571584",
+            "moderator" : "\u2112ife is \u2112ife#1726",
+            "moderator_id" : "189213698928148481",
+            "modified" : null,
+            "reason" : "reason test",
+            "until" : null,
+            "user" : "\u2112ife is \u2112ife#6886",
+            "user_id" : "300696400021159956"
+        }
+    }
+}

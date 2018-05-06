@@ -1,1 +1,27 @@
-{}
+{
+    "193786663791624192" : {
+        "cjail" : "cpunish",
+        "fixjail" : "fixpunish",
+        "jail" : "punish",
+        "jail-clean" : "punish-clean",
+        "lsjail" : "lspunish",
+        "pjail" : "punish",
+        "tjail" : "punish",
+        "ud" : "urban",
+        "unjail" : "unpunish",
+        "wjail" : "pwarn"
+    },
+    "203998882231877641" : {
+        "cjail" : "cpunish",
+        "fjail" : "fixpunish",
+        "jail" : "punish",
+        "jailc" : "punish-clean",
+        "jaillog" : "punishlog",
+        "lsjail" : "lspunish",
+        "unjail" : "unpunish",
+        "wjail" : "pwarn"
+    },
+    "332256442394345473" : {
+        "jail" : "punish"
+    }
+}
