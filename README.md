@@ -1,3 +1,16 @@
+This is a github repository for keeping myself orginized Combinig 2 Discord Bots Together:
+*Shadow Knight- A Red Discord Bot with custom cogs installed
+*Moshiro- A non Red Discord bot with costom cogs (some supported by Red)
+
+I will be attempting to load all of Shadow Knight's cogs into this bot and also Port all of Moshiro's over to Red
+
+This bot has all of Red's Requirments and extra cog requirments already installed and should be started with the start scripts and not the launcher.py
+
+All of the Dependencies That the system requres to run the bot are in the dependencies.sh (currently working for Ubuntu 16.04 lts) 
+
+I am sorry For my Sloppy Commits and i will try to be as detailed as i can. there will be a lot of mass commiting of files in the beginning to get the Red Requirments, cog dependencies, cog repo additions, etc. added to the repository as i can't manually commit each folder individually with details (Way too much work for one person on the weekend).
+
+
 ![intro](http://i.imgur.com/RgGlNpQ.jpg)
 
 # Red - A fully customizable Discord bot
