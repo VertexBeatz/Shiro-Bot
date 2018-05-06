@@ -1,0 +1,8 @@
+{
+    "AUTHOR" : "orels1",
+    "DESCRIPTION" : "Usage: [p]fetch <stuff> <user>\n Fetches required to user",
+    "SHORT": "Fetches stuff to user",
+    "DISABLED" : false,
+    "NAME" : "Fetch",
+    "TAGS": ["fun", "community", "legendary"]
+}

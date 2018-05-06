@@ -1,0 +1,11 @@
+
+{
+    "AUTHOR" : "Redjumpman",
+    "SHORT" : "Allows server owner to create a shop",
+    "DESCRIPTION" : "Users can buy/gift/redeem items created by an Admin.\nAdmins can change the shop name and add/remove items from the shop and monitor the pending list.",
+    "DISABLED" : false,
+    "NAME" : "Shop",
+    "REQUIREMENTS": ["tabulate"],
+    "TAGS" : ["shop", "economy"],
+    "INSTALL_MSG" : "Thank you for installing Shop from Jumper Cogs.\nIf you like my cog please star my repo or post any issues on my github here:\nhttps://github.com/Redjumpman/Jumper-Cogs"
+}

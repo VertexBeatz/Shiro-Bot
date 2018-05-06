@@ -1,0 +1,26 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+def check_files():
+    default = {$2}
+    settings_path = "data/${1:cog_name}/settings.json"
+
+    if not dataIO.is_valid_json(settings_path):
+        print("Creating default $1 settings.json...")
+        dataIO.save_json(settings_path, default)
+    else:  # consistency check
+        current = dataIO.load_json(settings_path)
+        if current.keys() != default.keys():
+            for key in default.keys():
+                if key not in current.keys():
+                    current[key] = default[key]
+                    print(
+                        "Adding " + str(key) + " field to $1 settings.json")
+            dataIO.save_json(settings_path, current)
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>check_files</tabTrigger>
+  <description>Red cog check_files</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.python, meta.function.python</scope>
+</snippet>

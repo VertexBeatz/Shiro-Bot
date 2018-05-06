@@ -1,0 +1,7 @@
+{
+    "AUTHOR" : "Paddolicious#8880",
+    "NAME" : "Lastfm",
+    "SHORT" : "Last.fm",
+    "DESCRIPTION" : "Get information from Last.fm users. Such as last played songs and top artists.",
+    "TAGS": ["LastFM", "music", "search", "tracking"]
+}

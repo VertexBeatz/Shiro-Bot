@@ -1,0 +1,8 @@
+{
+    "AUTHOR" : "Paddolicious#8880",
+    "NAME" : "OWeather",
+    "SHORT" : "Get weather information from Open Weather maps",
+    "DESCRIPTION" : "Get weather information from Open Weather maps",
+    "INSTAL_MSG" : "Make sure you get an API key from `http://openweathermap.org`",
+    "TAGS": ["weather", "search"]
+}

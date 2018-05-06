@@ -1,0 +1,7 @@
+{
+    "AUTHOR" : "Paddolicious#8880",
+    "NAME" : "CustomRoles",
+    "SHORT" : "Mods can add roles, users can apply or relieve roles.",
+    "DESCRIPTION" : "Roles created with this cog have no permissions, it only functions for fun. It creates a role with 0 permissions, making it ideal for just color roles.",
+    "TAGS": []
+}

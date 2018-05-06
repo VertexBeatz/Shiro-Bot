@@ -1,0 +1,10 @@
+{
+    "AUTHOR" : "Redjumpman",
+    "SHORT" : "Returns Tibia items/monsters/server info",
+    "DESCRIPTION" : "Displays Tibia item and monster information as well as Server info. Can check the total number of tibia players online.",
+    "DISABLED" : false,
+    "NAME" : "Tibia",
+    "REQUIREMENTS": ["beautifulsoup4", "tabulate"],
+    "TAGS" : ["tibia", "games", "info"],
+    "INSTALL_MSG" : "Thank you for installing Tibia from Jumper Cogs.\nIf you like my cog please star my repo or post any issues on my github here:\nhttps://github.com/Redjumpman/Jumper-Cogs"
+}

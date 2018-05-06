@@ -1,0 +1,9 @@
+{
+    "AUTHOR" : "Paddolicious#8880",
+    "NAME" : "Goodreads",
+    "SHORT" : "Search for a book on Goodreads",
+    "INSTALL_MSG" : "Thank you for using this cog. This cog needs the `xmltodict` library to function, so run `pip3 install xmltodict`. Also, don't forget to set the API key with `[p]goodreadsapi [key]`!",
+    "DESCRIPTION" : "Search for a book on Goodreads",
+    "REQUIREMENTS" : ["xmltodict"],
+    "TAGS": ["Goodreads", "books", "search"]
+}

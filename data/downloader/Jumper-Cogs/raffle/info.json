@@ -1,0 +1,9 @@
+{
+    "AUTHOR" : "Redjumpman",
+    "SHORT" : "Raffle system where you buy tickets with credits",
+    "DESCRIPTION" : "Raffle system. If you have problems contact me on discord, Redjumpman#2375, and if you wish to contribute to me visit my github page https://github.com/Redjumpman/Jumper-Cogs to donate.",
+    "DISABLED" : false,
+    "NAME" : "Raffle",
+    "TAGS" : ["raffle", "gambling", "economy"],
+    "INSTALL_MSG" : "Thank you for installing Raffle from Jumper Cogs.\nIf you like my cog please star my repo or post any issues on my github here:\nhttps://github.com/Redjumpman/Jumper-Cogs"
+}

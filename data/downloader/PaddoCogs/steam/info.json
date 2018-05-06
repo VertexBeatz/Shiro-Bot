@@ -1,0 +1,8 @@
+{
+    "AUTHOR" : "Paddolicious#8880",
+    "NAME" : "Steam",
+    "SHORT" : "Search for a game title on steam",
+    "INSTALL_MSG" : "Enjoy, and don't forget to update the list first with `steamupdate`. Be also aware this cog uses some cpu time when searching!",
+    "DESCRIPTION" : "Search for a game title on steam",
+    "TAGS": ["Steam", "games", "search", "gaming"]
+}

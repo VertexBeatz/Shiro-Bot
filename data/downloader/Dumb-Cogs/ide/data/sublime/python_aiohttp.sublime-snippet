@@ -1,0 +1,12 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+async with aiohttp.get(${1:url}) as ${2:r}:
+    ${3:${5:result} = await $2.${4:json()}}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>aiohttp</tabTrigger>
+  <description>async with aiohttp.get() as r</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.python</scope>
+</snippet>

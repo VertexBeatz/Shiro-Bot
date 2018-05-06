@@ -1,0 +1,7 @@
+{
+    "AUTHOR" : "Paddolicious#8880",
+    "NAME" : "InVoice",
+    "SHORT" : "Checks whether someone entered a voice channel.",
+    "DESCRIPTION" : "Checks whether someone entered a voice channel, if so, it gives that user a voice role. May come in handy when you want to do something special with voice users, such as voice users only text channel.",
+    "TAGS": ["tools", "voice"]
+}

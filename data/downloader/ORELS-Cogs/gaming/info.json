@@ -1,0 +1,9 @@
+{
+    "AUTHOR" : "orels1",
+    "DESCRIPTION" : "Made to make life of large gaming communities easier",
+    "DISABLED" : false,
+    "NAME": "Gaming",
+    "SHORT" : "Manages gaming profiles, lfg, etc",
+    "TAGS": ["gaming", "community", "tools"],
+    "HIDDEN": true
+}

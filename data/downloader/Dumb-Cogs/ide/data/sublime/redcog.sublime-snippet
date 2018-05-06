@@ -1,0 +1,74 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+import discord
+from discord.ext import commands
+from cogs.utils.dataIO import fileIO
+from cogs.utils import checks
+import asyncio
+import os
+import aiohttp
+from random import randint
+from random import choice as randchoice
+
+SETTINGS_PATH = "data/${1:cog_name}/settings.json"
+
+
+class ${1/(.+)/\u$1/g}:
+    """${2:description}"""
+
+    def __init__(self, bot):
+        self.bot = bot
+        self.settings = dataIO.load_json(SETTINGS_PATH)
+    ${4:
+    @checks.mod_or_permissions(administrator=True)
+    @commands.command(pass_context=True, no_pm=True)
+    async def ${5:command_name}(self, ctx):
+        """${6:description}"""
+        server = ctx.message.server
+        channel = ctx.message.channel
+        author = ctx.message.author
+        }${3:
+    async def on_message(self, message):
+        server = message.server
+        channel = message.channel
+        author = message.author
+        content = message.content
+        }$7
+
+def check_folders():
+    paths = ("data/${1:cog_name}", )
+    for path in paths:
+      if not os.path.exists(path):
+          print("Creating {} folder...".format(path))
+          os.makedirs(path)
+
+def check_files():
+    default = {}
+
+    if not dataIO.is_valid_json(SETTINGS_PATH):
+        print("Creating default $1 settings.json...")
+        dataIO.save_json(SETTINGS_PATH, default)
+    else:  # consistency check
+        current = dataIO.load_json(SETTINGS_PATH)
+        if current.keys() != default.keys():
+            for key in default.keys():
+                if key not in current.keys():
+                    current[key] = default[key]
+                    print(
+                        "Adding " + str(key) + " field to $1 settings.json")
+            dataIO.save_json(SETTINGS_PATH, current)
+
+def setup(bot):
+    check_folders()
+    check_files()
+    n = ${1/(.+)/\u$1/g}(bot)
+    bot.add_cog(n)
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>cog</tabTrigger>
+  <description>Red full cog</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.python, keyword.control.import.python</scope>
+</snippet>
