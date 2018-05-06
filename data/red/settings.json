@@ -3,9 +3,9 @@
     "OWNER" : "315949158622167041",
     "PASSWORD" : null,
     "PREFIXES" : [
-        "!sh"
+        "!sh "
     ],
-    "TOKEN" : "NDQwMDAyNTE5OTEwMDU1OTM2.DckzTA.GKm6Wr3W3vQz2UDKatCDRt6uNi4",
+    "TOKEN" : "",
     "default" : {
         "ADMIN_ROLE" : "Aknight",
         "MOD_ROLE" : "Mknight",
